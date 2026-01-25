@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Lab_2 · Electronics_2 Group 47 Logbook</title><meta name="description" content="Lab_2 - Unico &amp; Stanley"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://example.com/atom.xml" title="Electronics_2 Group 47 Logbook"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Electronics_2 Group 47 Logbook" type="application/atom+xml">
+</head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Lab_2</h1><div class="post-info">Jan 20, 2026</div><div class="post-content"><h1 id="Task-1-Connecting-Pybench-to-PC"><a href="#Task-1-Connecting-Pybench-to-PC" class="headerlink" title="Task 1: Connecting Pybench to PC"></a>Task 1: Connecting Pybench to PC</h1><h2 id="Check-the-connection"><a href="#Check-the-connection" class="headerlink" title="Check the connection"></a>Check the connection</h2><p>In task 1, we have connected our Pybench to the PC, and we’ve seen the disk in our File explorer.</p>
+<img src="/2026/01/20/Lab-2/l2t1.jpg" class="" title="Task1">
+
+
+
+<h2 id="Self-Test"><a href="#Self-Test" class="headerlink" title="Self-Test"></a>Self-Test</h2><p><strong>Procedure</strong></p>
+<ul>
+<li><p>Set the DIP switch to <strong>110</strong></p>
+</li>
+<li><p>Pressed the <strong>RESET</strong> button on the PyBench board</p>
+</li>
+<li><p>Observed the OLED display</p>
+</li>
+<li><p>Pressed the <strong>USR</strong> button to cycle through self-test modes</p>
+</li>
+</ul>
+<p><strong>Observation</strong></p>
+<ul>
+<li><p>OLED displayed <strong>“PyBench Self-Test”</strong> after reset</p>
+</li>
+<li><p>First press of USR button:</p>
+<ul>
+<li><p>Real-time microphone waveform displayed</p>
+</li>
+<li><p>Signal amplitude changed in response to ambient sound</p>
+</li>
+</ul>
+</li>
+<li><p>Second press:</p>
+<ul>
+<li>Accelerometer test showing pitch and roll values when tilting the board</li>
+</ul>
+</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<ul>
+<li><p>Microphone, ADC, OLED display, and IMU are operating correctly</p>
+</li>
+<li><p>PyBench hardware passed the built-in self-test</p>
+</li>
+</ul>
+<h1 id="Task-2-Signal-Generation"><a href="#Task-2-Signal-Generation" class="headerlink" title="Task 2: Signal Generation"></a>Task 2: Signal Generation</h1><p><strong>Sine Wave</strong></p>
+<ul>
+<li><p>Time domain: smooth periodic waveform</p>
+</li>
+<li><p>Frequency domain: single dominant peak at the fundamental frequency</p>
+</li>
+<li><p>Minimal harmonic content</p>
+</li>
+</ul>
+<img src="/2026/01/20/Lab-2/l2t21.png" class="" title="Task2_Sine">
+
+<img src="/2026/01/20/Lab-2/l2t22.png" class="" title="Task2_Sinef">
+
+<p><strong>Triangle Wave</strong></p>
+<ul>
+<li><p>Time domain: linear rising and falling edges</p>
+</li>
+<li><p>Frequency domain: odd harmonics present</p>
+</li>
+<li><p>Harmonic amplitudes decrease rapidly with frequency</p>
+</li>
+</ul>
+<img src="/2026/01/20/Lab-2/l2t23.png" class="" title="Task2_tri">
+
+<img src="/2026/01/20/Lab-2/l2t24.png" class="" title="Task2_trif">
+
+<p><strong>Square Wave</strong></p>
+<ul>
+<li><p>Time domain: sharp transitions</p>
+</li>
+<li><p>Frequency domain: strong odd harmonics</p>
+</li>
+<li><p>Harmonics decay more slowly than triangle wave</p>
+</li>
+</ul>
+<img src="/2026/01/20/Lab-2/l2t25.png" class="" title="Task2_Sqr">
+
+<img src="/2026/01/20/Lab-2/l2t26.png" class="" title="Task2_Sqrf">
+
+
+
+<h1 id="Task-3-Microphone-Signal-Capture-and-Spectrum-Analysis"><a href="#Task-3-Microphone-Signal-Capture-and-Spectrum-Analysis" class="headerlink" title="Task 3: Microphone Signal Capture and Spectrum Analysis"></a>Task 3: Microphone Signal Capture and Spectrum Analysis</h1><h6 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h6><ul>
+<li><p>Created <code>lab2task3.m</code> to acquire microphone samples</p>
+</li>
+<li><p>Set sampling frequency and number of samples</p>
+</li>
+<li><p>Removed DC offset before FFT</p>
+</li>
+<li><p>Used <code>plot_spec</code> to compute frequency spectrum</p>
+</li>
+<li><p>Modified code to run continuously using a <code>while</code> loop</p>
+</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2026/01/25/Lab-3/" class="prev">PREV</a><a href="/2026/01/20/Lab-1/" class="next">NEXT</a></div><div class="copyright"><p>© 2026 <a href="http://example.com">Unico & Stanley</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

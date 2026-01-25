@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Electronics_2 Group 47 Logbook</title>
+  
+  <subtitle>DESE50002 Electronics_2</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2026-01-25T19:31:40.699Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Unico &amp; Stanley</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Lab_3</title>
+    <link href="http://example.com/2026/01/25/Lab-3/"/>
+    <id>http://example.com/2026/01/25/Lab-3/</id>
+    <published>2026-01-25T19:31:40.000Z</published>
+    <updated>2026-01-25T19:31:40.699Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Lab_2</title>
+    <link href="http://example.com/2026/01/20/Lab-2/"/>
+    <id>http://example.com/2026/01/20/Lab-2/</id>
+    <published>2026-01-20T14:17:27.000Z</published>
+    <updated>2026-01-25T19:58:24.165Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Task-1-Connecting-Pybench-to-PC"><a href="#Task-1-Connecting-Pybench-to-PC" class="headerlink" title="Task 1: Connecting Pybench to PC"></a>Task 1: Connecting Pybench to PC</h1><h2 id="Check-the-connection"><a href="#Check-the-connection" class="headerlink" title="Check the connection"></a>Check the connection</h2><p>In task 1, we have connected our Pybench to the PC, and we’ve seen the disk in our File explorer.</p><img src="/2026/01/20/Lab-2/l2t1.jpg" class="" title="Task1"><h2 id="Self-Test"><a href="#Self-Test" class="headerlink" title="Self-Test"></a>Self-Test</h2><p><strong>Procedure</strong></p><ul><li><p>Set the DIP switch to <strong>110</strong></p></li><li><p>Pressed the <strong>RESET</strong> button on the PyBench board</p></li><li><p>Observed the OLED display</p></li><li><p>Pressed the <strong>USR</strong> button to cycle through self-test modes</p></li></ul><p><strong>Observation</strong></p><ul><li><p>OLED displayed <strong>“PyBench Self-Test”</strong> after reset</p></li><li><p>First press of USR button:</p><ul><li><p>Real-time microphone waveform displayed</p></li><li><p>Signal amplitude changed in response to ambient sound</p></li></ul></li><li><p>Second press:</p><ul><li>Accelerometer test showing pitch and roll values when tilting the board</li></ul></li></ul><p><strong>Conclusion</strong></p><ul><li><p>Microphone, ADC, OLED display, and IMU are operating correctly</p></li><li><p>PyBench hardware passed the built-in self-test</p></li></ul><h1 id="Task-2-Signal-Generation"><a href="#Task-2-Signal-Generation" class="headerlink" title="Task 2: Signal Generation"></a>Task 2: Signal Generation</h1><p><strong>Sine Wave</strong></p><ul><li><p>Time domain: smooth periodic waveform</p></li><li><p>Frequency domain: single dominant peak at the fundamental frequency</p></li><li><p>Minimal harmonic content</p></li></ul><img src="/2026/01/20/Lab-2/l2t21.png" class="" title="Task2_Sine"><img src="/2026/01/20/Lab-2/l2t22.png" class="" title="Task2_Sinef"><p><strong>Triangle Wave</strong></p><ul><li><p>Time domain: linear rising and falling edges</p></li><li><p>Frequency domain: odd harmonics present</p></li><li><p>Harmonic amplitudes decrease rapidly with frequency</p></li></ul><img src="/2026/01/20/Lab-2/l2t23.png" class="" title="Task2_tri"><img src="/2026/01/20/Lab-2/l2t24.png" class="" title="Task2_trif"><p><strong>Square Wave</strong></p><ul><li><p>Time domain: sharp transitions</p></li><li><p>Frequency domain: strong odd harmonics</p></li><li><p>Harmonics decay more slowly than triangle wave</p></li></ul><img src="/2026/01/20/Lab-2/l2t25.png" class="" title="Task2_Sqr"><img src="/2026/01/20/Lab-2/l2t26.png" class="" title="Task2_Sqrf"><h1 id="Task-3-Microphone-Signal-Capture-and-Spectrum-Analysis"><a href="#Task-3-Microphone-Signal-Capture-and-Spectrum-Analysis" class="headerlink" title="Task 3: Microphone Signal Capture and Spectrum Analysis"></a>Task 3: Microphone Signal Capture and Spectrum Analysis</h1><h6 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h6><ul><li><p>Created <code>lab2task3.m</code> to acquire microphone samples</p></li><li><p>Set sampling frequency and number of samples</p></li><li><p>Removed DC offset before FFT</p></li><li><p>Used <code>plot_spec</code> to compute frequency spectrum</p></li><li><p>Modified code to run continuously using a <code>while</code> loop</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Task-1-Connecting-Pybench-to-PC&quot;&gt;&lt;a href=&quot;#Task-1-Connecting-Pybench-to-PC&quot; class=&quot;headerlink&quot; title=&quot;Task 1: Connecting Pybench to </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Lab_1</title>
+    <link href="http://example.com/2026/01/20/Lab-1/"/>
+    <id>http://example.com/2026/01/20/Lab-1/</id>
+    <published>2026-01-20T14:17:13.000Z</published>
+    <updated>2026-01-20T14:17:13.900Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Electronics 2 Logbook</title>
+    <link href="http://example.com/2026/01/20/Intro/"/>
+    <id>http://example.com/2026/01/20/Intro/</id>
+    <published>2026-01-20T13:25:33.839Z</published>
+    <updated>2026-01-20T14:33:06.813Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to the <strong>Electronics 2 Laboratory Logbook</strong>.<br>This website documents my laboratory work for the <em>Electronics 2</em> module, including experimental objectives, theoretical background, circuit design, measurements, results, and reflections.</p><hr><h1 id="Portals"><a href="#Portals" class="headerlink" title="Portals"></a>Portals</h1><h2 id="Lab-1-Link👇"><a href="#Lab-1-Link👇" class="headerlink" title="Lab 1 Link👇"></a>Lab 1 Link👇</h2><p><a href="/2026/01/20/Lab-1/">Lab_1</a></p><p>This lab introduces fundamental signal processing concepts using MATLAB. Key topics include sinusoidal signal generation, frequency spectrum analysis using FFT, multi-tone signals, noise effects, and signal orthogonality through projection. The lab also includes a hardware-based spectrum analysis demonstration using the PyBench board, linking theoretical concepts to real-world signal measurement.</p><hr><p>s</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to the &lt;strong&gt;Electronics 2 Laboratory Logbook&lt;/strong&gt;.&lt;br&gt;This website documents my laboratory work for the &lt;em&gt;Electronics 2&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
